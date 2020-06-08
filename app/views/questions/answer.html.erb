@@ -1,9 +1,13 @@
 <h1>What does your Coach have to say to that?</h1>
-<div class="your-question">
-  <p><%= @question %></p>
-  <p><strong>-You-</strong></p>
+<div class="border-left quote-box">
+  <p><strong><%= @question %></strong></p>
+  <p><i>--You</i></p>
 </div>
-<div class="coach-answer">
-  <p><%= @answer %></p>
-  <p><strong>-Coach-</strong></p>
+<div class="border-left quote-box background-yellow">
+  <p><strong><%= @answer %></strong></p>
+  <p><i>--Coach</i></p>
 </div>
+<p class="link">
+<%= link_to 'Ask another question', '/ask'%>
+</p>
+
